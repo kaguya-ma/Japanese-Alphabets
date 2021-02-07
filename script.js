@@ -19,7 +19,7 @@ function initial() {
 }
 
 function checkAnswer() {
-  let input = document.querySelector('input').value
+  let input = document.querySelector('input').value.toLowerCase()
   if (input === answer) {
     counter++
     document.querySelector('p').innerHTML=`correct ${counter}`
